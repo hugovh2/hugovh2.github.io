@@ -1,135 +1,78 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tela de Login</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #f7f7f7;
-        }
-
-        .login-container {
-            background-color: #fff;
-            width: 100%;
-            max-width: 400px;
-            padding: 30px;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            text-align: center;
-        }
-
-        .login-container img {
-            height: 40px;
-            margin-bottom: 20px;
-        }
-
-        .login-container h1 {
-            font-size: 24px;
-            margin-bottom: 10px;
-            color: #333;
-        }
-
-        .login-container p {
-            font-size: 14px;
-            color: #666;
-            margin-bottom: 20px;
-        }
-
-        .login-container input[type="email"] {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 20px;
-            font-size: 14px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-        }
-
-        .login-container button {
-            width: 100%;
-            padding: 10px;
-            background-color: #ff4500;
-            color: #fff;
-            border: none;
-            border-radius: 4px;
-            font-size: 16px;
-            cursor: pointer;
-            transition: background-color 0.3s;
-        }
-
-        .login-container button:hover {
-            background-color: #e03e00;
-        }
-
-        .login-container .divider {
-            margin: 20px 0;
-            border-top: 1px solid #ccc;
-            position: relative;
-        }
-
-        .login-container .divider::before {
-            content: "ou entrar com o";
-            position: absolute;
-            top: -10px;
-            left: 50%;
-            transform: translateX(-50%);
-            background-color: #fff;
-            padding: 0 10px;
-            font-size: 14px;
-            color: #666;
-        }
-
-        .login-container .social-login {
-            display: flex;
-            justify-content: space-around;
-            margin-bottom: 20px;
-        }
-
-        .login-container .social-login img {
-            width: 40px;
-            height: 40px;
-            cursor: pointer;
-        }
-
-        .login-container .register {
-            font-size: 14px;
-            color: #666;
-        }
-
-        .login-container .register a {
-            color: #ff4500;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        .login-container .register a:hover {
-            text-decoration: underline;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tela de Login</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
-<body>
-    <div class="login-container">
-        <!-- <img src="https://via.placeholder.com/100x40" alt="Logo"> -->
-        <h1>Olá!</h1>
-        <p>Faça login na sua conta e acesse os avisos que você contatou, seus favoritos, pesquisas salvas e muito mais!</p>
-        <input type="email" placeholder="Digite seu e-mail">
-        <button>Continuar</button>
-        <div class="divider"></div>
-        <div class="social-login">
-            <!-- <img src="https://via.placeholder.com/40" alt="Google">
-            <img src="https://via.placeholder.com/40" alt="Facebook">
-            <img src="https://via.placeholder.com/40" alt="Apple"> -->
-        </div>
-        <p class="register">
-            É imobiliária ou corretor ou não tem uma conta? <a href="#">Registre-se</a>
-        </p>
+
+<body class="bg-gradient-to-r from-[#3EA76F] via-[#48C78E] to-[#A7EBC1] flex items-center justify-center min-h-screen p-4">
+  <div class="bg-white rounded-lg shadow-lg p-6 w-full max-w-md">
+    <!-- Logo -->
+    <div class="flex items-center justify-center mb-6">
+      <div class="bg-green-500 text-white p-4 rounded-full">
+        <i class="fas fa-rocket text-2xl sm:text-3xl"></i>
+      </div>
     </div>
+    <h1 class="text-xl sm:text-2xl font-bold text-green-600 mb-4 text-center">Bem-vindo de volta!</h1>
+    <p class="text-gray-600 text-sm mb-6 text-center">Acesse sua conta para aproveitar ao máximo nossos serviços!</p>
+
+    <!-- Formulário -->
+    <form id="loginForm" class="space-y-4">
+      <div>
+        <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+        <input type="email" id="email" name="email" placeholder="Digite seu email"
+          class="mt-1 block w-full p-3 border border-gray-300 rounded-md focus:ring-green-500 focus:border-green-500 text-sm sm:text-base">
+      </div>
+
+      <div>
+        <label for="password" class="block text-sm font-medium text-gray-700">Senha</label>
+        <input type="password" id="password" name="password" placeholder="Digite sua senha"
+          class="mt-1 block w-full p-3 border border-gray-300 rounded-md focus:ring-green-500 focus:border-green-500 text-sm sm:text-base">
+      </div>
+
+      <button type="submit"
+        class="w-full bg-green-500 hover:bg-green-600 text-white font-bold py-2 sm:py-3 rounded-md transition">
+        <i class="fas fa-sign-in-alt"></i> Entrar
+      </button>
+    </form>
+
+    <!-- Divisor -->
+    <div class="flex items-center my-4 sm:my-6">
+      <hr class="flex-grow border-gray-300">
+      <span class="px-4 text-gray-500 text-sm sm:text-base">ou</span>
+      <hr class="flex-grow border-gray-300">
+    </div>
+
+    <!-- Botões Sociais -->
+    <div class="flex justify-around">
+      <button class="bg-gray-100 hover:bg-gray-200 p-2 sm:p-3 rounded-md transition">
+        <i class="fab fa-google text-red-500 text-lg sm:text-xl"></i>
+      </button>
+      <button class="bg-gray-100 hover:bg-gray-200 p-2 sm:p-3 rounded-md transition">
+        <i class="fab fa-facebook-f text-blue-500 text-lg sm:text-xl"></i>
+      </button>
+      <button class="bg-gray-100 hover:bg-gray-200 p-2 sm:p-3 rounded-md transition">
+        <i class="fab fa-apple text-black text-lg sm:text-xl"></i>
+      </button>
+    </div>
+
+    <!-- Registro -->
+    <p class="text-xs sm:text-sm text-center text-gray-600 mt-4 sm:mt-6">
+      Não tem uma conta? <a href="/home/registro.html" class="text-green-500 font-bold hover:underline">Registre-se</a>
+    </p>
+  </div>
+
+  <!-- Script -->
+  <script>
+    document.getElementById('loginForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+      alert('Login realizado com sucesso!');
+    });
+  </script>
 </body>
+
 </html>
