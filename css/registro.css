@@ -1,0 +1,107 @@
+/* Estilos Gerais */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: #f7f7f7; /* Fundo branco suave */
+    color: #333; /* Texto cinza escuro */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  /* Container do Formulário */
+  .container {
+    width: 100%;
+    max-width: 500px;
+    background: #ffffff; /* Fundo branco */
+    border: 1px solid #ddd; /* Borda cinza claro */
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra leve */
+  }
+
+  /* Títulos */
+  .title {
+    font-size: 24px;
+    text-align: center;
+    color: #333; /* Cinza escuro */
+    margin-bottom: 10px;
+  }
+
+  .subtitle {
+    font-size: 16px;
+    text-align: center;
+    color: #666; /* Cinza médio */
+    margin-bottom: 20px;
+  }
+
+  /* Grupos de Entrada */
+  .input-group {
+    margin-bottom: 15px;
+  }
+
+  .input-group label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #555; /* Cinza médio */
+  }
+
+  .input-group input,
+  .input-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd; /* Borda cinza claro */
+    border-radius: 5px;
+    background: #f9f9f9; /* Fundo quase branco */
+    color: #333; /* Texto cinza escuro */
+    outline: none;
+    font-size: 14px;
+    transition: border-color 0.3s ease;
+  }
+
+  .input-group input:focus,
+  .input-group select:focus {
+    border-color: #999; /* Borda cinza mais escuro ao focar */
+  }
+
+  .input-group input::placeholder {
+    color: #aaa; /* Texto do placeholder em cinza claro */
+  }
+
+  /* Termos e Condições */
+  .terms {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 12px;
+    color: #555; /* Cinza médio */
+    margin-top: 10px;
+  }
+
+  .terms a {
+    color: #007bff; /* Link azul claro */
+    text-decoration: none;
+  }
+
+  .terms a:hover {
+    text-decoration: underline;
+  }
+
+  /* Botão */
+  .btn {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    background: #333; /* Fundo cinza escuro */
+    border: none;
+    border-radius: 5px;
+    color: #fff; /* Texto branco */
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+
+  .btn:hover {
+    background: linear-gradient(90deg, #ff4c4c, #ff6b6b);
+  }

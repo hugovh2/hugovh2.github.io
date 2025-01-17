@@ -1,0 +1,399 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+.navbar {
+    background-color: #fff;
+    padding: 10px 20px; /* Reduzindo o padding para diminuir a navbar */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra mais suave */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-logo img {
+    height: 30px; /* Diminuir a altura da imagem */
+}
+
+.navbar-logo span {
+    font-weight: bold;
+    font-size: 20px; /* Reduzir o tamanho da fonte */
+    margin-left: 10px;
+}
+
+.navbar-links a {
+    margin: 0 10px; /* Diminuir a margem entre os links */
+    font-size: 14px; /* Reduzir o tamanho da fonte */
+    color: #333;
+    text-decoration: none;
+}
+
+.navbar-links a:hover {
+    text-decoration: underline;
+}
+
+.navbar-buttons .button {
+    border: none;
+    padding: 8px 16px; /* Diminuir o padding dos botões */
+    margin-left: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 14px; /* Reduzir o tamanho da fonte dos botões */
+}
+
+
+
+.button-download {
+    background-color: #ff4d4d;
+    color: white;
+}
+
+.button-start {
+    background-color: transparent;
+    border: 2px solid #ff4d4d;
+    color: #ff4d4d;
+}
+
+.button-start:hover {
+    background-color: #ff4d4d;
+    color: white;
+}
+
+.hero-section {
+    position: relative;
+    background-image: url('https://img10.naventcdn.com/home/RPHOMv4.195.0-RC2/images/dfp-venta.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white; /* Ensure text is readable */
+    text-align: center; /* Center align text */
+    padding: 20px; /* Add padding for better spacing */
+}
+
+.hero-section h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.filter-box {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.filter-box button {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.filter-box input, .filter-box select {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.filter-container {
+    width: 70%;
+    max-width: 900px;
+}
+
+.nav-tabs .nav-link {
+    background-color: white; /* Define o fundo branco */
+    color: black; /* Cor do texto */
+    padding: 10px 20px;
+    border: 1px solid transparent; /* Bordas transparentes inicialmente */
+}
+
+.nav-tabs .nav-link.active {
+    background-color: white; /* Fundo branco para o link ativo */
+    border-bottom: 3px solid #ff4d4d; /* Sublinhar o link ativo */
+    color: black; /* Cor do texto */
+}
+
+.nav-tabs .nav-link:hover {
+    background-color: #f8f9fa; /* Fundo claro ao passar o mouse */
+    border-color: #dee2e6; /* Cor da borda ao passar o mouse */
+    text-decoration: none;
+}
+/* /////////////// imagem de texto como apresentação ////////////////////// */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.title {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.description {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.content {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.text {
+    flex: 1;
+    font-size: 1em;
+    line-height: 1.5em;
+    text-align: left;
+}
+
+.text h3 {
+    font-weight: bold;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.text p {
+    margin-top: 10px;
+    display: none;
+}
+
+.screenshot {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.screenshot img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+}
+
+.collab-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.collab-chat-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.collab-chat-bubble {
+    display: flex;
+    align-items: center;
+}
+
+.collab-profile-pic {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 10px;
+    object-fit: cover;
+}
+
+.collab-bubble {
+    width: 200px;
+    height: 50px;
+    border-radius: 25px;
+    position: relative;
+}
+
+.collab-bubble:before {
+    content: '';
+    position: absolute;
+    left: -10px;
+    top: 15px;
+    width: 20px;
+    height: 20px;
+    background-color: inherit;
+    border-radius: 50%;
+}
+
+.collab-text-section {
+    max-width: 50%;
+}
+
+.collab-text-section h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.collab-text-section p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.collab-link {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.collab-link:hover {
+    text-decoration: underline;
+}
+
+#teste {
+    color: #333;
+    text-align: center;
+}
+
+.centered-text {
+    text-align: center;
+}
+.faq-section {
+    display: flex;
+    gap: 2rem;
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.faq-header {
+    text-align: left;
+}
+
+.faq-title {
+    color: #2ecc71;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.faq-description {
+    margin-bottom: 1rem;
+    color: #6c757d;
+}
+
+.faq-container {
+    flex: 1;
+    max-width: 400px;
+}
+
+.faq-item {
+    margin-bottom: 1rem;
+}
+
+.faq-question {
+    background-color: #e9f7ef;
+    border: none;
+    width: 100%;
+    padding: 1rem;
+    text-align: left;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-bottom: 0.5rem;
+}
+
+.faq-answer {
+    display: none;
+    padding: 1rem;
+    background-color: #f0f4f7;
+    border-radius: 5px;
+}
+
+.faq-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.faq-image img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+.imoveis-section {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.title {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.imoveis-cards {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+}
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    min-width: 300px;
+    overflow: hidden;
+}
+
+.card-img {
+    width: 100%;
+    height: auto;
+}
+
+.card-content {
+    padding: 15px;
+}
+
+.card-title {
+    font-size: 16px;
+    color: #333;
+    margin: 0 0 10px;
+}
+
+.card-price {
+    font-size: 18px;
+    color: #f00;
+    margin: 0 0 5px;
+}
+
+.card-location {
+    font-size: 14px;
+    color: #666;
+    margin: 0 0 10px;
+}
+
+.card-info {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    color: #666;
+}

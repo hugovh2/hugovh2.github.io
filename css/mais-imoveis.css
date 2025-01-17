@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+}
+
+.container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.suggestions {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.suggestions h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.suggestions .buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.suggestions .buttons button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.suggestions .buttons button:hover {
+    background-color: #f00;
+    color: white;
+}
+
+.steps {
+    background-color: #eef2f5;
+    padding: 20px 0;
+}
+
+.steps h2 {
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.steps .step-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.steps .step {
+    text-align: center;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 250px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.steps .step img {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px;
+}
+
+.steps .step h3 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.steps .step p {
+    font-size: 14px;
+    color: #666;
+}
